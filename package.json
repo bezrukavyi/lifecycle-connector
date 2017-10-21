@@ -1,0 +1,48 @@
+{
+  "name": "lifecycle-connector",
+  "version": "1.0.1",
+  "description": "React-redux injector with react lifecycle events",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bezrukavyi/lifecycle-connector.git"
+  },
+  "keywords": [
+    "react",
+    "lifecycle",
+    "redux",
+    "connector"
+  ],
+  "author": "Yaroslav Bezrukavyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bezrukavyi/lifecycle-connector/issues"
+  },
+  "homepage": "https://github.com/bezrukavyi/lifecycle-connector#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cheerio": "^1.0.0-rc.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "glob": "^7.1.2",
+    "prettier": "^1.4.4",
+    "uppercamelcase": "^3.0.0"
+  },
+  "dependencies": {
+    "react": ">=15.5.4",
+    "redux": ">=3.7.0"
+  }
+}
