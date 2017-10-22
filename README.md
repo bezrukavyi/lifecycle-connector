@@ -1,20 +1,38 @@
 ## React-Redux Lifecycle connector
+Simple way for integrate react component's [lifecycle](https://reactjs.org/docs/state-and-lifecycle.html) to [redux](https://github.com/reactjs/redux) connector.
 
 ## Installation
     npm install lifecycle-connector --save
 
+## Available react lifecycle events
+- componentWillMount
+- render
+- componentDidMount
+- componentWillReceiveProps
+- shouldComponentUpdate
+- componentWillUpdate
+- componentDidUpdate
+- componentWillUnmount
+
 ## Usage
+In ```container.js```
 
 ```javascript
-````
-Or include icons from the compiled folder ./dist.
+import lifecycleConnect from 'lifecycle-connector'
+import { reduxForm } from 'redux-form'
 
-```javascript
+import Component from './Component'
 
-```
-You can also include the whole icon pack:
-```javascript
+const mapStateToProps = () => ({
+  projectsIds: [1, 2, 3],
+})
 
+const mapDispatchToProps = {
+  componentDidMount: () => console.log('componentDidMount'),
+  componentWillMount: () => console.log('componentWillMount'),
+}
+
+export default lifecycleConnect(mapStateToProps, mapDispatchToProps)(Component)
 ```
 
 ## License
